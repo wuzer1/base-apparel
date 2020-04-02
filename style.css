@@ -11,7 +11,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
 }
 .container{
@@ -119,15 +119,11 @@ input[type=submit]:hover{
 #logo-mobile{
     display: none;
 }
-/* @media screen and (max-width:1440px){
-    input[type=email]:invalid{
-        background-position: 73%;
-    }
-} */
 @media screen and (max-width: 768px){
     body{
         overflow: visible;
     }
+    /* TOP SIDE */
     .flex-container{
         flex-direction: column-reverse;
         height: 100%;
@@ -155,6 +151,7 @@ input[type=submit]:hover{
         left: 45px;
         background-size: 30%;
     }
+    /* BOTTOM SIDE */
     .left{
         padding: 0 20px 150px;
         max-width: 100%;
