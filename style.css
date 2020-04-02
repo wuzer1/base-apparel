@@ -3,9 +3,6 @@
     --primary-color-dred: hsl(0, 36%, 70%);
     --primary-color-sred: hsl(0, 93%, 68%);
     --neutral-color-gred: hsl(0, 6%, 24%);
-
-    --gradient-color1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    --gradient-color2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 * {
     box-sizing: border-box;
@@ -110,7 +107,6 @@ input[type=submit]:focus{
 input[type=submit]:hover{
     background-color: #b66363;
     cursor: pointer;
-    
 }
 /* RIGHT SIDE */
 .right{
@@ -120,9 +116,52 @@ input[type=submit]:hover{
     background-position: center center;
     width: 50%;
 }
-
-@media screen and (max-width:1440px){
+#logo-mobile{
+    display: none;
+}
+/* @media screen and (max-width:1440px){
     input[type=email]:invalid{
         background-position: 73%;
+    }
+} */
+@media screen and (max-width: 768px){
+    body{
+        overflow: visible;
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .right{
+        background-image: url('/images/hero-mobile.jpg');
+        background-position: center;
+        width: 100%;
+        height: 45vh;
+        margin: 120px auto 0;
+        padding: 20px;
+  }
+  #logo{
+      display: none;
+  }
+    #logo-mobile{
+        display: block;
+        width: 100%;
+        height: 30%;
+        background-image: url('/images/logo.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        position: absolute;
+        top: 45px;
+        left: 45px;
+        background-size: 30%;
+    }
+    .left{
+        padding: 0 20px 150px;
+        max-width: 100%;
+        text-align: center;
+    }
+    h1{
+        margin: 70px 0 20px;
+        font-size: 3em;
     }
 }
