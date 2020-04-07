@@ -135,13 +135,13 @@ input[type=submit]:hover{
         height: 45vh;
         margin: 120px auto 0;
         padding: 20px;
-  }
+    }
   #logo{
       display: none;
   }
     #logo-mobile{
-        display: block;
-        width: 100%;
+        display: inline-block;
+        width: 50%;
         height: 30%;
         background-image: url('/images/logo.svg');
         background-repeat: no-repeat;
@@ -149,7 +149,7 @@ input[type=submit]:hover{
         position: absolute;
         top: 45px;
         left: 45px;
-        background-size: 30%;
+        background-size: 100%;
     }
     /* BOTTOM SIDE */
     .left{
@@ -159,6 +159,6 @@ input[type=submit]:hover{
     }
     h1{
         margin: 70px 0 20px;
-        font-size: 3em;
+        font-size: 8vw;
     }
 }
